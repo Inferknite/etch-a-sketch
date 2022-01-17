@@ -1,0 +1,23 @@
+:root {
+    --columns-row: 16;
+    /* --color: "#000000"; */
+
+  }
+.grid{
+display:grid;
+width: 777px;
+height: 777px;
+grid-template-columns: repeat(var(--columns-row),1fr[col-start]); 
+grid-template-rows: repeat(var(--columns-row),1fr[row-start]); 
+}
+
+.trail{
+background-color: var(--color);
+}
+
+/* 
+.updated{
+display:grid;
+grid-template-columns: repeat('${gridSize}', 20px [col-start]);
+grid-template-rows: repeat('${gridSize}', 20px [col-start]);
+}*/
